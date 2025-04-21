@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс: Генеративные нейросети</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            color: #333;
+            display: flex;
+        }
+        .sidebar {
+            width: 60px;
+            background-color: #003366;
+            color: #fff;
+            transition: width 0.3s ease;
+            overflow: hidden;
+            position: relative;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+        .sidebar:hover {
+            width: 200px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            padding: 15px 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .sidebar li:hover {
+            background-color: #002855;
+        }
+        .sidebar i {
+            margin-right: 10px;
+            min-width: 24px;
+            text-align: center;
+        }
+        .back-btn {
+            display: block;
+            padding: 15px 10px;
+            color: #fff;
+            text-decoration: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            transition: background 0.2s;
+        }
+        .back-btn:hover {
+            background-color: #002855;
+        }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+        .container {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease-in-out;
+        }
+        .nav-tabs .nav-link {
+            border: none;
+            color: #555;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .nav-tabs .nav-link:hover {
+            background-color: #f1f3f5;
+            color: #000;
+            border-radius: 8px 8px 0 0;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #e9ecef;
+            border-radius: 8px 8px 0 0;
+            color: #000;
+        }
+        .tab-content {
+            background: #ffffff;
+            border-radius: 0 0 8px 8px;
+            padding: 20px;
+            border: 1px solid #e9ecef;
+            border-top: none;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .section-title {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .list-group-item {
+            border: none;
+            background: #f1f3f5;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: background-color 0.2s ease;
+        }
+        .list-group-item:hover {
+            background: #e2e6ea;
+        }
+        .ratio iframe {
+            border-radius: 8px;
+        }
+        .tab-pane {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .tab-pane.active.show {
+            opacity: 1;
+        }
+        @media (max-width: 576px) {
+            .sidebar { display: none; }
+            .container { padding: 15px; }
+            .nav-tabs { flex-wrap: wrap; justify-content: center; }
+            h1 { font-size: 1.5rem; text-align: center; }
+            .section-title { font-size: 1.2rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <div>
+        <ul>
+            <li><i class="bi bi-house"></i><span> Главная</span></li>
+            <li><i class="bi bi-journal-text"></i><span> Курсы</span></li>
+            <li><i class="bi bi-gear"></i><span> Настройки</span></li>
+        </ul>
+    </div>
+    <a href="MainPageTeacher.html" class="back-btn">← Назад к курсам</a>
+</div>
+
+<div class="main-content">
+    <div class="container py-4 mt-3">
+        <h1 class="mb-4">Курс: Генеративные нейросети</h1>
+        <nav class="nav nav-tabs justify-content-center">
+            <a class="nav-link active" data-bs-toggle="tab" href="#lectures">Лекции</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#practice">Практика</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#videos">Видео</a>
+        </nav>
+
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="lectures">
+                <h3 class="section-title">Лекции</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Лекция 1: Основы нейросетей</li>
+                    <li class="list-group-item">Лекция 2: Архитектуры генеративных моделей</li>
+                    <li class="list-group-item">Лекция 3: Примеры использования GAN и Diffusion</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="practice">
+                <h3 class="section-title">Практика</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Практическое задание 1: Создание простого GAN</li>
+                    <li class="list-group-item">Практическое задание 2: Обучение модели на пользовательских данных</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="videos">
+                <h3 class="section-title">Видеоматериалы</h3>
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Видео 1" allowfullscreen></iframe>
+                </div>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Видео 2" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="bootstrap.min.js"></script>
+</body>
+</html>

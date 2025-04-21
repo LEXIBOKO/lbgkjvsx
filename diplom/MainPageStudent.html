@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #2d2c50;
+            color: white;
+            padding: 20px;
+            position: fixed;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h5>Университет будущего</h5>
+        <p>Калинин Евгений<br><small>KalininEM@tsp...</small></p>
+        <a href="#">Назначенные <span class="badge bg-light text-dark">6</span></a>
+        <a href="#">Дополнительные <span class="badge bg-light text-dark">3</span></a>
+        <a href="#">Завершенные <span class="badge bg-light text-dark">2</span></a>
+    </div>
+    
+    <div class="content">
+        <h3>Назначенные курсы</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/full_size_1687509046-a8e4e624a7d65e16792630e75e406a21.jpg" class="card-img-top" alt="Генеративные нейросети">
+                    <div class="card-body">
+                        <h5 class="card-title">Генеративные нейросети</h5>
+                        <p class="card-text">Курс</p>
+                        <p class="text-muted">Не начат</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img\thumb_7309_articles_standart.jpeg" class="card-img-top" alt="Глубокое изучение HTML">
+                    <div class="card-body">
+                        <h5 class="card-title">Глубокое изучение HTML</h5>
+                        <p class="card-text">Курс с тестом</p>
+                        <p class="text-primary">В процессе (30% / 100%)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/3master-software-developers-productivity.jpg" class="card-img-top" alt="Тренинг коммуникации с работодателем">
+                    <div class="card-body">
+                        <h5 class="card-title">Тренинг коммуникации с работодателем</h5>
+                        <p class="card-text">Диалоговый тренажер</p>
+                        <p class="text-muted">Не начат</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

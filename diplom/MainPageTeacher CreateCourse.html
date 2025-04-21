@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #2d2c50;
+            color: white;
+            padding: 20px;
+            position: fixed;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Высота на всю страницу */
+            width: 250px; /* Ширина боковой панели */
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+    
+        .sidebar-top {
+            flex-grow: 1; /* Позволяет верхнему блоку занимать доступное пространство */
+        }
+    
+        .sidebar-bottom {
+            margin-top: auto; /* Прижимает блок к нижнему краю */
+        }
+    
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+    
+        .menu li {
+            margin: 10px 0;
+        }
+    
+        .menu a {
+            text-decoration: none;
+            color: white;
+        }
+        .info {
+            display: flex; 
+            align-items: center;
+        }
+        .text-muted {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h5>Университет будущего</h5>
+        <p>Анатолий Арчин<br><small>AnatoliiAA@tsp...</small></p>
+        <h5 style="margin-top: 20px;">Бакалавриат</h5>
+        <a href="#">1 курс <span class="badge bg-light text-dark">6</span></a>
+        <a href="#">2 курс <span class="badge bg-light text-dark">3</span></a>
+        <a href="#">3 курс <span class="badge bg-light text-dark">4</span></a>
+        <a href="#">4 курс <span class="badge bg-light text-dark">2</span></a>
+        <h5 style="margin-top: 20px;">Магистратура</h5>
+        <a href="#">1 курс <span class="badge bg-light text-dark">3</span></a>
+        <a href="#">2 курс <span class="badge bg-light text-dark">2</span></a>
+                
+        <div class="sidebar-bottom">
+            <ul class="menu">
+                <li><a href="#">Создать курс</a></li>
+                <li><a href="#">Найти курс</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Создание курса</h3>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-md-5">
+                <input type="text" class="form-control" id="input-name" placeholder="Введите название курса">
+                <label for="coursetype" style="margin-top: 10px;">Выберите тип курса:</label>
+                <select id="coursetype" name="coursetype">
+                    <option value="coursetype1">Лекция</option>
+                    <option value="coursetype2">Практические занятия</option>
+                    <option value="coursetype3">Лабораторные занятия</option>
+                    <option value="coursetype4">Производственная практика</option>
+                    <option value="coursetype5"></option>
+                    <option value="coursetype6"></option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="degrees">Выберите курс:</label>
+                <select id="degrees" name="degrees">
+                    <option value="degree1">Бакалавриат 1 курс</option>
+                    <option value="degree2">Бакалавриат 2 курс</option>
+                    <option value="degree3">Бакалавриат 3 курс</option>
+                    <option value="degree4">Бакалавриат 4 курс</option>
+                    <option value="degree5">Магистратура 1 курс</option>
+                    <option value="degree6">Магистратура 2 курс</option>
+                </select>
+                <label for="semester" style="margin-top: 10px;">Выберите семестр:</label>
+                <select id="semester" name="semester">
+                    <option value="semester1">Зимний семестр</option>
+                    <option value="semester2">Летний семестр</option>
+                </select>
+                <input type="text" class="form-control" id="input-class-name" placeholder="Введите номера групп через запятую" style="margin-top: 10px;">
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-primary" style="margin-top: 40px;">Продолжить</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
