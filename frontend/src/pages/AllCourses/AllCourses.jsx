@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Register = () => {
+const AllCourses = () => {
     return (
         <div>
-            
+            all courses
         </div>
     );
 };
 
-export default Register;
+export default AllCourses;
