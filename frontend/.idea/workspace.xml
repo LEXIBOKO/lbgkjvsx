@@ -4,27 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d41b3240-afb6-4b0c-a9f3-10ba0bacf141" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PageContent/PageContent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/darkBlue.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/lightBlueBlob.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/logoVertical.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Login/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Main/Main.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Register/Register.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Welcome/Welcome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Welcome/Welcome.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/routesAuth.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/routesMain.jsx" afterDir="false" />
+    <list default="true" id="d41b3240-afb6-4b0c-a9f3-10ba0bacf141" name="Changes" comment="add routing and core components">
+      <change afterPath="$PROJECT_DIR$/src/entities/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Main/Student/Additional/Additional.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Main/Student/Assigned/Assigned.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Main/Student/Completed/Completed.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/AppRoutes.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/ProtectedRoutes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageContent/PageContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageContent/PageContent.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AllCourses/AllCourses.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Student/AllCourses/AllCourses.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Auth/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Auth/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Auth/Register/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Auth/Register/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main/MainTeacher.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/MainTeacher.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main/Student/Student.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main/Student/Student.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/routesAuth.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/routesStudent.jsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,30 +34,30 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="JSX File" />
         <option value="CSS File" />
+        <option value="JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "dashagenze"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dashagenze&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/LEXIBOKO/lbgkjvsx.git",
-    "accountId": "21e0e94a-2ea7-4a2e-a9a1-69c50ce03c1f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LEXIBOKO/lbgkjvsx.git&quot;,
+    &quot;accountId&quot;: &quot;21e0e94a-2ea7-4a2e-a9a1-69c50ce03c1f&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2wAmMYmmUcrPtZaxkzanpiz9hJH" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -67,28 +67,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/user/Documents/web/jenyaDiplom/lbgkjvsx/frontend/src/assets",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/home/user/.nvm/versions/node/v20.15.0/bin/node",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "ts.external.directory.path": "/app/extra/webstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/user/Documents/web/jenyaDiplom/lbgkjvsx/frontend/src/assets&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/home/user/.nvm/versions/node/v20.15.0/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/app/extra/webstorm/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/Main/Student" />
+      <recent name="$PROJECT_DIR$/src/pages/Auth" />
+      <recent name="$PROJECT_DIR$/src/pages/Main" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
   <component name="RunManager">
@@ -123,11 +130,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745492704333</updated>
-      <workItem from="1745492705346" duration="7322000" />
+      <workItem from="1745492705346" duration="7804000" />
+      <workItem from="1745569531950" duration="13157000" />
+      <workItem from="1745827152892" duration="17723000" />
     </task>
+    <task id="LOCAL-00001" summary="init react base">
+      <option name="closed" value="true" />
+      <created>1745504808838</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745504808838</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add routing and core components">
+      <option name="closed" value="true" />
+      <created>1745593351369</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745593351369</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init react base" />
+    <MESSAGE value="add routing and core components" />
+    <option name="LAST_COMMIT_MESSAGE" value="add routing and core components" />
   </component>
 </project>

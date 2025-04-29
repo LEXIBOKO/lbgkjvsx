@@ -1,12 +1,14 @@
 import React from 'react';
-import RoutesStudent from "../../routes/routesStudent.jsx";
-import RoutesAuth from "../../routes/routesAuth.jsx";
+import {Route, Routes} from "react-router-dom";
+import AllCourses from "../../pages/Main/Student/AllCourses/AllCourses.jsx";
+import Login from "../../pages/Auth/Login/Login.jsx";
+import Register from "../../pages/Auth/Register/Register.jsx";
+import Student from "../../pages/Main/Student/Student.jsx";
+import MainTeacher from "../../pages/Main/MainTeacher.jsx";
 
 const PageContent = () => {
     return (
-        <div>
-            <RoutesAuth />
-        </div>
+<>pc</>
     );
 };
 

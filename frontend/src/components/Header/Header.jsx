@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../../assets/logoHorizontal.svg?react'
 import './Header.css'
 
-const Header = ({title}) => {
+const HeaderComponent = ({title}) => {
     return (
         <div className='boxHeader'>
             <Logo />
@@ -13,4 +13,4 @@ const Header = ({title}) => {
     );
 };
 
-export default Header;
+export default HeaderComponent;

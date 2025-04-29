@@ -2,11 +2,10 @@ import React from 'react';
 import Logo from "../../../assets/logoVertical.svg?react";
 import {Button, Input} from "antd";
 import './Login.css'
-import {useNavigate as handleLogin} from "react-router-dom";
+import {handleLogin} from "../../../entities/auth.js";
 
 
 const Login = () => {
-    const handleAuth = handleLogin();
     return (
         <div className='box'>
             <Logo/>
@@ -22,7 +21,7 @@ const Login = () => {
                     <Input size={'large'}/>
                 </label>
             </div>
-            <Button className='button' onClick={() => handleAuth('/maint')}>Войти в личный кабинет</Button>
+            <Button className='button' onClick={() => handleLogin()}>Войти в личный кабинет</Button>
 
         </div>
     );

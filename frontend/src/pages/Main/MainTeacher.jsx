@@ -1,9 +1,10 @@
 import React from 'react';
+import {Outlet} from "react-router-dom";
 
 const MainTeacher = () => {
     return (
         <div>
-            main teach
+           <Outlet/>
         </div>
     );
 };

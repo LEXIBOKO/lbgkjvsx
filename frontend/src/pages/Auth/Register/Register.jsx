@@ -1,13 +1,12 @@
 import React from 'react';
 import Logo from "../../../assets/logoVertical.svg?react";
 import {Button, Input} from "antd";
-import {useNavigate as handleRegister} from "react-router-dom";
 import './Register.css'
+import {handleRegister} from "../../../entities/auth.js";
 
 
 const Register = () => {
 
-    const handleAuth = handleRegister()
     return (
         <div className='registerBox'>
             <Logo/>
@@ -35,7 +34,7 @@ const Register = () => {
                     <Input size={'large'}/>
                 </label>
             </div>
-            <Button className='button' onClick={() => handleAuth('/mains')}>Зарегистрироваться</Button>
+            <Button className='button' onClick={() => handleRegister()}>Зарегистрироваться</Button>
         </div>
     );
 };

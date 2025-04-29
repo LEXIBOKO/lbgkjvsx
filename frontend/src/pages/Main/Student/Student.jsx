@@ -1,11 +1,21 @@
 import React from 'react';
-import Header from "../../../components/Header/Header.jsx";
 import {getStudentCourses, getStudentInfo} from "../../../entities/students.js";
 import './Student.css'
-import {Badge, Menu} from "antd";
+import {Badge, Layout, Menu} from "antd";
 import {getAllCourses} from "../../../entities/courses.js";
-import {useNavigate} from "react-router-dom";
+import {Link, Outlet, Route, Routes, useNavigate} from "react-router-dom";
 import PageContent from "../../../components/PageContent/PageContent.jsx";
+import Sider from "antd/es/layout/Sider.js";
+import {Content, Header} from "antd/es/layout/layout.js";
+import AllCourses from "./AllCourses/AllCourses.jsx";
+import Assigned from "./Assigned/Assigned.jsx";
+import Additional from "./Additional/Additional.jsx";
+import Completed from "./Completed/Completed.jsx";
+import HeaderComponent from "../../../components/Header/Header.jsx";
+import Logo from "../../../assets/logoHorizontal.svg?react";
+import AppRoutes from "../../../routes/AppRoutes.jsx";
+import ProtectedRoutes from "../../../routes/ProtectedRoutes.jsx";
+import StudentRoutes from "../../../routes/AppRoutes.jsx";
 
 const student = getStudentInfo();
 const studentCourses = getStudentCourses();
@@ -28,7 +38,7 @@ const items = [
         icon: <Badge color={'white'} style={{color: 'black', paddingTop: '4px'}} count={studentCourses.additional.length}/>
     },
     {
-        key: '/complete',
+        key: '/completed',
         label: 'Завершенные',
         icon: <Badge color={'white'} style={{color: 'black', paddingTop: '4px'}} count={studentCourses.assigned.length + studentCourses.additional.length}/>
     },
@@ -38,20 +48,38 @@ const items = [
 const Student = () => {
     const navigate = useNavigate();
     return (
-        <div>
-            <Header title={'Добрый день, ' + student.name}/>
 
-            <div>
-                <Menu theme={'dark'} items={items} className={'menu'} style={{color: 'white', paddingTop: '4px'}}
-                      onClick={({ item, key, keyPath, domEvent }) => {
-                          console.log(key)
-                          navigate(`${key}`)
-                      }}
-                />
-            </div>
+        <Layout >
+                <HeaderComponent title={'Добрый день, ' + student.name} />
 
-            <PageContent />
-        </div>
+            <Layout>
+                <Sider>
+                    <Menu theme={'dark'} items={items} className={'menu'} style={{color: 'white', paddingTop: '4px'}}
+                          onClick={({ keyPath }) => {
+                              console.log(keyPath)
+                              navigate(`${keyPath}`)
+                          }}
+                    />
+                </Sider>
+
+                <Content>
+                    content
+
+                    <Outlet />
+                    {/*<Routes>*/}
+                    {/*    <Route element={<StudentRoutes />}>*/}
+                    {/*        <Route path="/allcourses" element={<AllCourses />} />*/}
+                    {/*        <Route path="/assigned" element={<Assigned />} />*/}
+                    {/*        <Route path="/additional" element={<Additional />} />*/}
+                    {/*        <Route path="/completed" element={<Completed />} />*/}
+
+                    {/*    </Route>*/}
+                    {/*    /!*<Route path="/main-student" element={<Student />} />*!/*/}
+
+                    {/*</Routes>*/}
+                </Content>
+            </Layout>
+        </Layout>
     );
 };
 
