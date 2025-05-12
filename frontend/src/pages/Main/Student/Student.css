@@ -1,7 +1,18 @@
 .menu {
-    width: 270px;
     background-color: #323F72;
-    height: 100vh;
+    height: 100%;
     color: white;
 }
 
+.layout {
+    width: 100%;
+    height: 100vh;
+    background: none;
+}
+
+.content {
+    margin: 20px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}

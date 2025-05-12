@@ -1,9 +1,13 @@
 import React from 'react';
+import CardsDisplay from "../../../../components/CardsDisplay/CardsDisplay.jsx";
+import {getStudentCourses} from "../../../../entities/students.js";
+
+const studentCourses = getStudentCourses();
 
 const Assigned = () => {
     return (
         <div>
-            assigned
+            <CardsDisplay hasProgress={true}  data={studentCourses.assigned}/>
         </div>
     );
 };
