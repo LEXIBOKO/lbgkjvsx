@@ -48,6 +48,8 @@ const Student = () => {
                           onClick={({ keyPath }) => {
                               console.log(keyPath)
                               navigate(`${keyPath}`)
+                              // todo доработать синк выбора меню с рутами
+
                           }}
                     />
                 </Sider>

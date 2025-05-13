@@ -1,9 +1,14 @@
 import React from 'react';
+import CardsDisplay from "../../../../components/CardsDisplay/CardsDisplay.jsx";
+import {getTeacherCourses} from "../../../../entities/teachers.js";
+
+const teacherCourses = getTeacherCourses()
 
 const TeacherCourses = () => {
     return (
         <div>
-            teacher courese
+            <h3>Мои курсы</h3>
+            <CardsDisplay data={teacherCourses}/>
         </div>
     );
 };

@@ -1,19 +1,18 @@
 import React from 'react';
 import {Navigate, Route, Routes} from "react-router-dom";
-import AllCourses from "../pages/Main/Student/AllCourses/AllCourses.jsx";
-import Assigned from "../pages/Main/Student/Assigned/Assigned.jsx";
-import Additional from "../pages/Main/Student/Additional/Additional.jsx";
-import Completed from "../pages/Main/Student/Completed/Completed.jsx";
+
 import TeacherCourses from "../pages/Main/Teacher/AllCourses/TeacherCourses.jsx";
+import CourseEditorPage from "../pages/Main/Teacher/CourseEditorPage/CourseEditorPage.jsx";
+import AllCourses from "../pages/Main/Student/AllCourses/AllCourses.jsx";
 
 const TeacherRoutes = () => {
     return (
         <>
             <Routes>
-                {/*<Route path="/" element={<Student />} />*/}
+                <Route path="/" element={<TeacherCourses />} />
                 <Route path="/teachercourses" element={<TeacherCourses />} />
-                {/*<Route path="/assigned" element={<Assigned />} />*/}
-
+                <Route path="/allcourses" element={<AllCourses />} />
+                <Route path="/createcourse" element={<CourseEditorPage />} />
 
                 <Route path="*" element={<Navigate to={'/'} />} />
             </Routes>

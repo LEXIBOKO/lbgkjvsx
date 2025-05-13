@@ -2,12 +2,16 @@ import React from 'react';
 import {Outlet, useNavigate} from "react-router-dom";
 import {getStudentCourses, getStudentInfo} from "../../../entities/students.js";
 import {getAllCourses} from "../../../entities/courses.js";
-import {Badge, Layout, Menu} from "antd";
+import {Badge, Button, Layout, Menu} from "antd";
 import HeaderComponent from "../../../components/Header/Header.jsx";
 import StudentRoutes from "../../../routes/StudentRoutes.jsx";
 import {Content} from "antd/es/layout/layout.js";
 import Sider from "antd/es/layout/Sider.js";
 import {getTeacherCourses, getTeacherInfo} from "../../../entities/teachers.js";
+import './Teacher.css'
+import {PlusCircleOutlined} from "@ant-design/icons";
+import TeacherRoutes from "../../../routes/TeacherRoutes.jsx";
+import FileUploader from "../../../components/FileUploader/FileUploader.jsx";
 
 const teacher = getTeacherInfo();
 const teacherCourses = getTeacherCourses();
@@ -19,11 +23,11 @@ const items = [
         label: 'Мои курсы',
         icon: <Badge color={'white'} style={{color: 'black', paddingTop: '4px'}} count={teacherCourses.length} />,
     },
-    // {
-    //     key: '/assigned',
-    //     label: 'Назначенные',
-    //     icon: <Badge color={'white'} style={{color: 'black', paddingTop: '4px'}} count={studentCourses.assigned.length}/>
-    // },
+    {
+        key: '/allcourses',
+        label: 'Все курсы',
+        icon: <Badge color={'white'} style={{color: 'black', paddingTop: '4px'}} count={allCourses.length}/>
+    },
     // {
     //     key: '/additional',
     //     label: 'Дополнительные',
@@ -52,11 +56,14 @@ const Teacher = () => {
                               navigate(`${keyPath}`)
                           }}
                     />
+                    <Button className={'button'} icon={<PlusCircleOutlined />} size={'large'} onClick={() => navigate(`/createcourse`)} >
+                        Создать курс
+                    </Button>
                 </Sider>
 
                 <Content className="content">
 
-                    <StudentRoutes />
+                    <TeacherRoutes />
 
                 </Content>
             </Layout>
