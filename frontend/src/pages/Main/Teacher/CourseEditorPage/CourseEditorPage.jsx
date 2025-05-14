@@ -124,7 +124,7 @@ const CourseEditorPage = () => {
                 </div>
             </div>
 
-            <Button size={'large'} type={'primary'}>
+            <Button size={'large'} type={'primary'} onClick={() => alert('Успешно!')}>
                 Добавить курс
             </Button>
         </div>

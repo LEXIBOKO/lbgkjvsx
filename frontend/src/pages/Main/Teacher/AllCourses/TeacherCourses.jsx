@@ -7,7 +7,7 @@ const teacherCourses = getTeacherCourses()
 const TeacherCourses = () => {
     return (
         <div>
-            <h3>Мои курсы</h3>
+            <h2>Мои курсы</h2>
             <CardsDisplay data={teacherCourses}/>
         </div>
     );

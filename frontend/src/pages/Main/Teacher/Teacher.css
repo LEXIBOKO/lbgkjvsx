@@ -1,17 +1,16 @@
-.menu {
+.teacher-menu {
     background-color: #2A4D72;
     height: 100%;
     color: white;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
 }
 
 .layout {
     width: 100%;
     height: 100vh;
     background: none;
-
+    color: black;
 }
 
 .content {
@@ -29,3 +28,5 @@
     background-color: #2A4D72;
     color: white;
 }
+
+

@@ -13,3 +13,7 @@
     height: 150px;
     object-fit: cover;
 }
+
+.progress-text {
+    color: #198EFB;
+}

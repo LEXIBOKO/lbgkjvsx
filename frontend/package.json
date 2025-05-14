@@ -19,6 +19,7 @@
     "@tiptap/react": "^2.12.0",
     "@tiptap/starter-kit": "^2.12.0",
     "antd": "^5.24.8",
+    "pdf-viewer-reactjs": "^2.2.3",
     "quill": "^2.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

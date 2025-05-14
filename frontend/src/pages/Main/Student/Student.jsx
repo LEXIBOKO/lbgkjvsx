@@ -42,9 +42,9 @@ const Student = () => {
         <Layout className={'layout'}>
             <HeaderComponent title={'Добрый день, ' + student.name} />
             <Layout className={'layout'}>
-                <Sider className={'menu'} >
+                <Sider className={'student-menu'} >
 
-                    <Menu theme={'dark'} items={items} className={'menu'} style={{color: 'white', paddingTop: '4px'}}
+                    <Menu theme={'dark'} items={items} className={'student-menu'} style={{color: 'white', paddingTop: '4px'}}
                           onClick={({ keyPath }) => {
                               console.log(keyPath)
                               navigate(`${keyPath}`)

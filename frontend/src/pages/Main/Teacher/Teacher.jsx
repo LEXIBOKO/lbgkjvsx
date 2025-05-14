@@ -28,17 +28,6 @@ const items = [
         label: 'Все курсы',
         icon: <Badge color={'white'} style={{color: 'black', paddingTop: '4px'}} count={allCourses.length}/>
     },
-    // {
-    //     key: '/additional',
-    //     label: 'Дополнительные',
-    //     icon: <Badge color={'white'} style={{color: 'black', paddingTop: '4px'}} count={studentCourses.additional.length}/>
-    // },
-    // {
-    //     key: '/completed',
-    //     label: 'Завершенные',
-    //     icon: <Badge color={'white'} style={{color: 'black', paddingTop: '4px'}} count={studentCourses.assigned.length + studentCourses.additional.length}/>
-    // },
-
 ]
 
 const Teacher = () => {
@@ -48,9 +37,9 @@ const Teacher = () => {
         <Layout className={'layout'}>
             <HeaderComponent title={'Добрый день, ' + teacher.name} />
             <Layout className={'layout'}>
-                <Sider className={'menu'} >
+                <Sider className={'teacher-menu'} >
 
-                    <Menu theme={'dark'} items={items} className={'menu'} style={{color: 'white', paddingTop: '4px'}}
+                    <Menu theme={'dark'} items={items} className={'teacher-menu'} style={{color: 'white', paddingTop: '4px'}}
                           onClick={({ keyPath }) => {
                               console.log(keyPath)
                               navigate(`${keyPath}`)
