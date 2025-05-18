@@ -20,6 +20,8 @@ import cardCover19 from '../assets/cardCover19.jpg';
 import cardCover20 from '../assets/cardCover20.jpg';
 import fileAttached from '../assets/file.pdf'
 
+// entities: student, teacher, course, group
+// course: assigned, additional, completed
 
 export const db = {
     "students": [

@@ -3,6 +3,7 @@ import Student from "./pages/Main/Student/Student.jsx";
 import React, {createContext, useContext} from "react";
 import Teacher from "./pages/Main/Teacher/Teacher.jsx";
 import {ConfigProvider} from "antd";
+import Welcome from "./pages/Welcome/Welcome.jsx";
 
 
 function App() {
@@ -10,11 +11,9 @@ function App() {
 
       return (
           <>
-              <UserContext.Provider value={'student'}>
-                  <Student />
-              </UserContext.Provider>
-
-              {/*<Teacher />*/}
+            {/*<Welcome/>*/}
+            <Student />
+            {/*<Teacher />*/}
           </>
       )
 }

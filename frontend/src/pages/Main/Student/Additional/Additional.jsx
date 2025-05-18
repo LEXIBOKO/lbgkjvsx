@@ -4,6 +4,7 @@ import {getStudentCourses} from "../../../../entities/students.js";
 
 const studentCourses = getStudentCourses();
 
+// todo добавить заголовки
 const Additional = () => {
     return (
         <div>

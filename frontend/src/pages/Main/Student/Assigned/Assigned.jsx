@@ -7,8 +7,8 @@ const studentCourses = getStudentCourses();
 const Assigned = () => {
     return (
         <div>
-            <h1>Назначенные</h1>
-            <CardsDisplay hasProgress={true}  data={studentCourses.assigned}/>
+            <h1>Обязательные</h1>
+            <CardsDisplay hasProgress={true} data={studentCourses.assigned}/>
         </div>
     );
 };

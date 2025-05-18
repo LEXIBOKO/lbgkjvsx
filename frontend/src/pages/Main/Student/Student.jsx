@@ -21,7 +21,7 @@ const items = [
     },
     {
         key: '/assigned',
-        label: 'Назначенные',
+        label: 'Обязательные',
         icon: <Badge color={'white'} style={{color: 'black', paddingTop: '4px'}} count={studentCourses.assigned.length}/>
     },
     {
@@ -49,7 +49,6 @@ const Student = () => {
                               console.log(keyPath)
                               navigate(`${keyPath}`)
                               // todo доработать синк выбора меню с рутами
-
                           }}
                     />
                 </Sider>

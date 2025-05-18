@@ -8,7 +8,6 @@ const Completed = () => {
     return (
         <div>
             <CardsDisplay data={studentCourses.completed}/>
-
         </div>
     );
 };
